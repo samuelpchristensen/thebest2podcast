@@ -8,9 +8,19 @@
   },
   "episodes": [
     {
+      "episode": 14,
+      "title": "David Neeleman - Founder of JetBlue, Azul, Breeze",
+      "location": "Brazil",
+      "duration": "TBD",
+      "views": 0,
+      "published": "Just now",
+      "youtube_id": "ch8ulb-GWe4",
+      "url": "https://www.youtube.com/watch?v=ch8ulb-GWe4"
+    },
+    {
       "episode": 13,
       "title": "Brad Wilcox - Teacher, Author, Speaker",
-      "location": "Viña del Mar & Santiago, Chile",
+      "location": "Vi\u00f1a del Mar & Santiago, Chile",
       "duration": "52 minutes",
       "views": 142,
       "published": "5 months ago",
@@ -30,7 +40,7 @@
     {
       "episode": 11,
       "title": "Terryl Givens - Academic & Author",
-      "location": "São Paulo, Brazil",
+      "location": "S\u00e3o Paulo, Brazil",
       "duration": "45 minutes",
       "views": 77,
       "published": "1 year ago",
