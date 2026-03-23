@@ -1,0 +1,131 @@
+{
+  "channel": {
+    "name": "The Best 2 Podcast",
+    "handle": "@TheBest2Podcast",
+    "subscribers": 28,
+    "videos": 25,
+    "description": "Welcome to 'The Best 2 Podcast'! This upbeat podcast explores the secular benefits of LDS missions, emphasizing practical lessons and valuable advice. Join accomplished individuals from The Church of Jesus Christ of Latter-day Saints as they share how missions catalyze personal, professional, and vocational triumphs, revealing profound impacts on careers, relationships, and life's purpose."
+  },
+  "episodes": [
+    {
+      "episode": 13,
+      "title": "Brad Wilcox - Teacher, Author, Speaker",
+      "location": "Viña del Mar & Santiago, Chile",
+      "duration": "52 minutes",
+      "views": 142,
+      "published": "5 months ago",
+      "youtube_id": "geDmF4AslpU",
+      "url": "https://www.youtube.com/watch?v=geDmF4AslpU"
+    },
+    {
+      "episode": 12,
+      "title": "Steven Sharp Nelson - Cello Guy",
+      "location": "South Korea & New York",
+      "duration": "1 hour",
+      "views": 61,
+      "published": "1 year ago",
+      "youtube_id": "3BM8zSXGK2s",
+      "url": "https://www.youtube.com/watch?v=3BM8zSXGK2s"
+    },
+    {
+      "episode": 11,
+      "title": "Terryl Givens - Academic & Author",
+      "location": "São Paulo, Brazil",
+      "duration": "45 minutes",
+      "views": 77,
+      "published": "1 year ago",
+      "youtube_id": "Z78AfnlPG60",
+      "url": "https://www.youtube.com/watch?v=Z78AfnlPG60"
+    },
+    {
+      "episode": 10,
+      "title": "Mark Wiest - Former KSL VP of Sales & YM Advisory Board Member",
+      "location": "Rosario, AR & Veracruz, MX",
+      "duration": "43 minutes",
+      "views": 14,
+      "published": "1 year ago",
+      "youtube_id": "Rn5T51Vkmrk",
+      "url": "https://www.youtube.com/watch?v=Rn5T51Vkmrk"
+    },
+    {
+      "episode": 9,
+      "title": "Mark Gottfredson - Strategy Consultant & Sr. Partner at Bain & Company",
+      "location": "Tokyo, Japan",
+      "duration": "40 minutes",
+      "views": 86,
+      "published": "1 year ago",
+      "youtube_id": "qXdJ-5lVzoQ",
+      "url": "https://www.youtube.com/watch?v=qXdJ-5lVzoQ"
+    },
+    {
+      "episode": 7,
+      "title": "Eric Mika - Professional Basketball Player",
+      "location": "Rome, Italy",
+      "duration": "40 minutes",
+      "views": 63,
+      "published": "1 year ago",
+      "youtube_id": "lOd3OowDe2s",
+      "url": "https://www.youtube.com/watch?v=lOd3OowDe2s"
+    },
+    {
+      "episode": 6,
+      "title": "Kenny Matthews & Bronzson Woods - Social Entrepreneurs",
+      "location": "Phnom Penh, Cambodia",
+      "duration": "1 hour, 2 minutes",
+      "views": 33,
+      "published": "1 year ago",
+      "youtube_id": "NqanNHk7_5g",
+      "url": "https://www.youtube.com/watch?v=NqanNHk7_5g"
+    },
+    {
+      "episode": 5,
+      "title": "Tim Clark - PhD Social Scientist & Leadership Expert",
+      "location": "Seoul, South Korea",
+      "duration": "45 minutes",
+      "views": 23,
+      "published": "1 year ago",
+      "youtube_id": "pL1nUyWRkkI",
+      "url": "https://www.youtube.com/watch?v=pL1nUyWRkkI"
+    },
+    {
+      "episode": 4,
+      "title": "Levi Lindsay - Chief Marketing Officer and Entrepreneur",
+      "location": "Arcadia, CA",
+      "duration": "56 minutes",
+      "views": 36,
+      "published": "2 years ago",
+      "youtube_id": "T2-uwkepye8",
+      "url": "https://www.youtube.com/watch?v=T2-uwkepye8"
+    },
+    {
+      "episode": 3,
+      "title": "Thomas B. Griffith - Lawyer & Federal Judge",
+      "location": "Johannesburg, South Africa",
+      "duration": "51 minutes",
+      "views": 56,
+      "published": "2 years ago",
+      "youtube_id": "1cKn7NnXXz8",
+      "url": "https://www.youtube.com/watch?v=1cKn7NnXXz8"
+    },
+    {
+      "episode": 2,
+      "title": "Spencer Jan - Solo Stove Co-Founder",
+      "location": "Kaohsiung, Taiwan",
+      "duration": "1 hour",
+      "views": 86,
+      "published": "2 years ago",
+      "youtube_id": "TFFcAhhNxAw",
+      "url": "https://www.youtube.com/watch?v=TFFcAhhNxAw"
+    },
+    {
+      "episode": 1,
+      "title": "Kyle Welch - Entrepreneur & Accounting Professor",
+      "location": "Detroit, MI",
+      "duration": "52 minutes",
+      "views": 93,
+      "published": "2 years ago",
+      "youtube_id": "eTgUTG6cWn0",
+      "url": "https://www.youtube.com/watch?v=eTgUTG6cWn0"
+    }
+  ]
+}

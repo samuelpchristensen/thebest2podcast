@@ -1,0 +1,30 @@
+baseURL = 'https://thebest2podcast.com'
+languageCode = 'en-us'
+title = 'The Best 2 Podcast'
+theme = 'best2'
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+  description = "This upbeat podcast explores the secular benefits of LDS missions, emphasizing practical lessons and valuable advice. Join accomplished individuals from The Church of Jesus Christ of Latter-day Saints as they share how missions catalyze personal, professional, and vocational triumphs, revealing profound impacts on careers, relationships, and life's purpose. Find the extraordinary in everyday missionary experiences that craft exceptional lives on The Best 2 Podcast."
+  author = "Samuel Christensen"
+  logo = "/images/logo.png"
+  
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    name = 'Episodes'
+    url = '/episodes/'
+    weight = 20
+  [[menu.main]]
+    name = 'About'
+    url = '/about/'
+    weight = 30
+  [[menu.main]]
+    name = 'Subscribe'
+    url = '/subscribe/'
+    weight = 40

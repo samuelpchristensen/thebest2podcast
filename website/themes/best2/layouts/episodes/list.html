@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="page-header">
+    <div class="container">
+        <h1>All Episodes</h1>
+        <p>{{ len (where .Site.RegularPages "Type" "episodes") }} conversations about the transformative power of LDS missions</p>
+    </div>
+</div>
+
+<section class="episodes-list">
+    <div class="container">
+        <div class="episode-grid">
+            {{ range (where .Site.RegularPages "Type" "episodes") }}
+            <article class="episode-card">
+                <div class="episode-thumbnail">
+                    <img src="https://img.youtube.com/vi/{{ .Params.youtube_id }}/maxresdefault.jpg" 
+                         alt="{{ .Title }}" 
+                         loading="lazy">
+                    <span class="episode-number">Ep. {{ .Params.episode }}</span>
+                </div>
+                <div class="episode-info">
+                    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <p class="episode-guest">{{ .Params.guest }}</p>
+                    <p class="episode-meta">
+                        <span class="location">{{ .Params.location }}</span>
+                        <span class="duration">{{ .Params.duration }}</span>
+                    </p>
+                    <p class="episode-excerpt">{{ .Summary }}</p>
+                    <a href="{{ .Permalink }}" class="btn btn-small">Listen & Read Transcript</a>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

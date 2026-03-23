@@ -1,0 +1,65 @@
+{{ define "main" }}
+<article class="episode-full">
+    <div class="container">
+        <header class="episode-header">
+            <span class="episode-number-large">Episode {{ .Params.episode }}</span>
+            <h1>{{ .Title }}</h1>
+            <p class="episode-guest-large">{{ .Params.guest }}</p>
+            <div class="episode-meta-large">
+                <span class="location">{{ .Params.location }}</span>
+                <span class="separator">•</span>
+                <span class="duration">{{ .Params.duration }}</span>
+                <span class="separator">•</span>
+                <span class="date">{{ .Date.Format "January 2, 2006" }}</span>
+            </div>
+        </header>
+        
+        <div class="episode-video">
+            <iframe 
+                width="100%" 
+                height="450" 
+                src="https://www.youtube.com/embed/{{ .Params.youtube_id }}" 
+                title="{{ .Title }}"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        
+        <div class="episode-actions">
+            <a href="https://www.youtube.com/watch?v={{ .Params.youtube_id }}" class="btn btn-primary" target="_blank">
+                Watch on YouTube
+            </a>
+            <a href="#transcript" class="btn btn-secondary">Jump to Transcript</a>
+        </div>
+        
+        <div class="episode-description">
+            <h2>About This Episode</h2>
+            {{ .Content }}
+        </div>
+        
+        <div id="transcript" class="episode-transcript">
+            <h2>Episode Transcript</h2>
+            <div class="transcript-content">
+                {{ .Params.transcript | markdownify }}
+            </div>
+        </div>
+        
+        <nav class="episode-nav">
+            {{ with .PrevInSection }}
+            <a href="{{ .Permalink }}" class="prev-episode">
+                <span class="nav-label">← Previous Episode</span>
+                <span class="nav-title">Ep. {{ .Params.episode }}: {{ .Title }}</span>
+            </a>
+            {{ end }}
+            
+            {{ with .NextInSection }}
+            <a href="{{ .Permalink }}" class="next-episode">
+                <span class="nav-label">Next Episode →</span>
+                <span class="nav-title">Ep. {{ .Params.episode }}: {{ .Title }}</span>
+            </a>
+            {{ end }}
+        </nav>
+    </div>
+</article>
+{{ end }}

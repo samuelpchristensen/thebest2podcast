@@ -1,0 +1,64 @@
+{{ define "main" }}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>The Best 2 Podcast</h1>
+            <p class="tagline">This upbeat podcast explores the secular benefits of LDS missions, emphasizing practical lessons and valuable advice. Join accomplished individuals from The Church of Jesus Christ of Latter-day Saints as they share how missions catalyze personal, professional, and vocational triumphs.</p>
+            <div class="hero-buttons">
+                <a href="/episodes/" class="btn btn-primary">Browse Episodes</a>
+                <a href="https://www.youtube.com/@TheBest2Podcast" class="btn btn-secondary" target="_blank">Subscribe on YouTube</a>
+                <a href="https://linktr.ee/TheBest2Podcast" class="btn btn-secondary" target="_blank">All Links</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/images/logo.png" alt="The Best 2 Podcast Logo" class="logo-large">
+        </div>
+    </div>
+</section>
+
+<section class="latest-episodes">
+    <div class="container">
+        <h2>Latest Episodes</h2>
+        <div class="episode-grid">
+            {{ range first 6 (where .Site.RegularPages "Type" "episodes") }}
+            <article class="episode-card">
+                <div class="episode-thumbnail">
+                    <img src="https://img.youtube.com/vi/{{ .Params.youtube_id }}/maxresdefault.jpg" 
+                         alt="{{ .Title }}" 
+                         loading="lazy">
+                    <span class="episode-number">Ep. {{ .Params.episode }}</span>
+                </div>
+                <div class="episode-info">
+                    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <p class="episode-guest">{{ .Params.guest }}</p>
+                    <p class="episode-meta">
+                        <span class="location">{{ .Params.location }}</span>
+                        <span class="duration">{{ .Params.duration }}</span>
+                    </p>
+                    <a href="{{ .Permalink }}" class="btn btn-small">Listen & Read Transcript</a>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+        <div class="center">
+            <a href="/episodes/" class="btn btn-secondary">View All Episodes</a>
+        </div>
+    </div>
+</section>
+
+<section class="about-snippet">
+    <div class="container">
+        <h2>About the Podcast</h2>
+        <p>Welcome to "The Best 2 Podcast"! This upbeat podcast explores the secular benefits of LDS missions, emphasizing practical lessons and valuable advice. Join accomplished individuals from The Church of Jesus Christ of Latter-day Saints as they share how missions catalyze personal, professional, and vocational triumphs.</p>
+        <a href="/about/" class="btn btn-secondary">Learn More</a>
+    </div>
+</section>
+
+<section class="subscribe-section">
+    <div class="container">
+        <h2>Never Miss an Episode</h2>
+        <p>Subscribe on YouTube to get notified when new episodes drop.</p>
+        <a href="https://www.youtube.com/@TheBest2Podcast" class="btn btn-primary btn-large" target="_blank">Subscribe on YouTube</a>
+    </div>
+</section>
+{{ end }}
