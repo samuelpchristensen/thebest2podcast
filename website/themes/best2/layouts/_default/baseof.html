@@ -5,40 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <link rel="stylesheet" href="/css/main.css?v=2">
+    <link rel="stylesheet" href="/css/main.css?v=3">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    {{ if .Params.episode }}
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="{{ .Title }}">
-    <meta property="og:description" content="{{ .Description }}">
-    <meta property="og:url" content="{{ .Permalink }}">
-    <meta name="twitter:card" content="summary_large_image">
-    {{ end }}
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="site-header">
-        <nav class="container">
-            <a href="/" class="logo">
-                <img src="/images/logo.png" alt="The Best 2 Podcast" width="200">
-            </a>
-            <ul class="nav-menu">
-                {{ range .Site.Menus.main }}
-                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-                {{ end }}
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="/" class="nav-logo">The Best <span>2</span></a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/episodes/">Episodes</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="https://www.youtube.com/@TheBest2Podcast" target="_blank">YouTube</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
     
     <main>
         {{ block "main" . }}{{ end }}
     </main>
     
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; {{ now.Year }} The Best 2 Podcast. All rights reserved.</p>
-            <div class="social-links">
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 The Best 2 Podcast. All rights reserved.</p>
+            <div class="footer-links">
                 <a href="https://www.youtube.com/@TheBest2Podcast" target="_blank">YouTube</a>
                 <a href="https://linktr.ee/TheBest2Podcast" target="_blank">Linktree</a>
             </div>
