@@ -1,69 +1,108 @@
 {{ define "main" }}
+<!-- Hero -->
 <section class="hero">
     <div class="container">
-        <div class="hero-content">
-            <div class="hero-eyebrow">Podcast</div>
-            <h1>The Best 2 Podcast</h1>
-            <p class="hero-description">Exploring the secular benefits of LDS missions through conversations with accomplished individuals who share how their missions catalyzed personal, professional, and vocational triumphs.</p>
-            <div class="hero-actions">
-                <a href="/episodes/" class="btn btn-primary">Browse Episodes</a>
-                <a href="https://www.youtube.com/@TheBest2Podcast" class="btn btn-secondary" target="_blank">Subscribe on YouTube</a>
+        <div class="hero-inner">
+            <div class="hero-content">
+                <h1 class="text-display">The Best 2 Podcast</h1>
+                <p class="text-body">Exploring the secular benefits of LDS missions through conversations with accomplished individuals.</p>
+                <div class="hero-actions">
+                    <a href="/episodes/" class="btn btn-primary">Browse Episodes</a>
+                    <a href="https://www.youtube.com/@TheBest2Podcast" class="btn btn-secondary" target="_blank">Subscribe</a>
+                </div>
+            </div>
+            <div class="hero-artwork">
+                <img src="/images/logo.png" alt="The Best 2 Podcast">
             </div>
         </div>
     </div>
 </section>
 
-<section class="episodes">
+<!-- Featured Episode -->
+<section class="featured">
     <div class="container">
-        <div class="section-header">
-            <h2>Latest Episodes</h2>
-            <p>Conversations with returned missionaries who've gone on to achieve remarkable things</p>
+        <div class="featured-header">
+            <span class="featured-label">Featured Episode</span>
         </div>
-        <div class="episodes-grid">
-            {{ range first 6 (where .Site.RegularPages "Type" "episodes") }}
-            <article class="episode-card">
-                <div class="episode-image">
-                    <img src="https://img.youtube.com/vi/{{ .Params.youtube_id }}/maxresdefault.jpg" 
-                         alt="{{ .Title }}" 
-                         loading="lazy">
-                    <div class="episode-overlay"></div>
-                    <span class="episode-number">Episode {{ .Params.episode }}</span>
+        {{ range first 1 (where .Site.RegularPages "Type" "episodes") }}
+        <article class="featured-card">
+            <div class="featured-image">
+                <img src="https://img.youtube.com/vi/{{ .Params.youtube_id }}/maxresdefault.jpg" alt="{{ .Title }}">
+            </div>
+            <div class="featured-content">
+                <span class="text-small" style="margin-bottom: var(--space-2); display: block;">Episode {{ .Params.episode }}</span>
+                <h2 class="text-title">{{ .Title }}</h2>
+                <p class="text-body" style="margin: var(--space-4) 0;">{{ .Params.guest }} — {{ .Params.location }}</p>
+                <a href="{{ .Permalink }}" class="btn btn-accent">Listen Now</a>
+            </div>
+        </article>
+        {{ end }}
+    </div>
+</section>
+
+<!-- Episode Library -->
+<section class="library">
+    <div class="container">
+        <div class="library-header">
+            <h2 class="text-title">All Episodes</h2>
+            <a href="/episodes/" class="btn btn-secondary" style="padding: var(--space-2) var(--space-4); font-size: 0.875rem;">View All</a>
+        </div>
+        <div class="episode-list">
+            {{ range first 5 (where .Site.RegularPages "Type" "episodes") }}
+            <a href="{{ .Permalink }}" class="episode-item">
+                <span class="episode-number">Ep {{ .Params.episode }}</span>
+                <div class="episode-info">
+                    <h3>{{ .Title }}</h3>
+                    <div class="episode-meta">{{ .Params.guest }} · {{ .Params.duration }}</div>
                 </div>
-                <div class="episode-content">
-                    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                    <div class="episode-meta">
-                        <span>{{ .Params.guest }}</span>
-                        <span>{{ .Params.duration }}</span>
-                    </div>
-                </div>
-            </article>
+                <span class="episode-play">▶</span>
+            </a>
             {{ end }}
         </div>
-        <div class="text-center" style="margin-top: 4rem;">
-            <a href="/episodes/" class="btn btn-secondary">View All Episodes</a>
-        </div>
     </div>
 </section>
 
+<!-- About -->
 <section class="about">
-    <div class="container about-grid">
-        <div class="about-content">
-            <h2>About the Podcast</h2>
-            <p>Welcome to "The Best 2 Podcast" — an upbeat podcast that explores the secular benefits of LDS missions, emphasizing practical lessons and valuable advice.</p>
-            <p>Join accomplished individuals from The Church of Jesus Christ of Latter-day Saints as they share how missions catalyze personal, professional, and vocational triumphs.</p>
-            <a href="/about/" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
-        </div>
-        <div class="about-image">
-            <img src="/images/logo.png" alt="The Best 2 Podcast">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-content">
+                <h2 class="text-title">About the Host</h2>
+                <p class="text-body">I'm Samuel Christensen, a returned missionary passionate about uncovering how mission experiences shape careers, relationships, and life's purpose.</p>
+                <p class="text-body">Through candid conversations with accomplished individuals, we reveal the profound impacts of "the best two years."</p>
+                <a href="/about/" class="btn btn-secondary" style="margin-top: var(--space-4);">Read More</a>
+            </div>
+            <div class="about-image">
+                <img src="/images/logo.png" alt="Samuel Christensen">
+            </div>
         </div>
     </div>
 </section>
 
-<section class="subscribe">
-    <div class="container subscribe-content">
-        <h2>Never Miss an Episode</h2>
-        <p>Subscribe on YouTube to get notified when new conversations drop.</p>
-        <a href="https://www.youtube.com/@TheBest2Podcast" class="btn btn-primary" target="_blank">Subscribe on YouTube</a>
+<!-- Platforms -->
+<section class="platforms">
+    <div class="container">
+        <p>Listen on</p>
+        <div class="platform-list">
+            <a href="https://www.youtube.com/@TheBest2Podcast" class="platform-item" target="_blank">
+                <span>YouTube</span>
+            </a>
+            <a href="https://linktr.ee/TheBest2Podcast" class="platform-item" target="_blank">
+                <span>Linktree</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+    <div class="container">
+        <h2 class="text-title">Stay Updated</h2>
+        <p class="text-body">Get notified when new episodes drop.</p>
+        <form class="newsletter-form" action="mailto:samuelpchristensen@gmail.com" method="post">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
     </div>
 </section>
 {{ end }}
