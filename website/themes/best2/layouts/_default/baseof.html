@@ -5,19 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <link rel="stylesheet" href="/css/main.css?v=4">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/modern-2026.css?v=1">
 </head>
 <body>
-    <nav class="nav">
-        <div class="container nav-inner">
-            <a href="/" class="nav-logo">The Best 2</a>
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/episodes/">Episodes</a></li>
-                <li><a href="/about/">About</a></li>
-            </ul>
+    <header class="header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <div class="logo-mark">B2</div>
+                <span>The Best 2</span>
+            </a>
+            <nav>
+                <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/episodes/">Episodes</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="https://www.youtube.com/@TheBest2Podcast" target="_blank" class="nav-cta">Subscribe</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
     
     <main>
         {{ block "main" . }}{{ end }}
@@ -25,11 +40,14 @@
     
     <footer class="footer">
         <div class="container footer-inner">
-            <p>&copy; 2026 The Best 2 Podcast</p>
+            <div class="footer-logo">The Best 2</div>
             <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/episodes/">Episodes</a>
+                <a href="/about/">About</a>
                 <a href="https://www.youtube.com/@TheBest2Podcast" target="_blank">YouTube</a>
-                <a href="https://linktr.ee/TheBest2Podcast" target="_blank">Linktree</a>
             </div>
+            <p class="footer-copy">&copy; 2026 The Best 2 Podcast. All rights reserved.</p>
         </div>
     </footer>
 </body>

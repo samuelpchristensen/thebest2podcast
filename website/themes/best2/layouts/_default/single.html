@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article class="page-content">
+    <header class="page-header">
+        <div class="container">
+            <h1 class="font-display text-hero">{{ .Title }}</h1>
+            {{ if .Description }}
+            <p class="text-body">{{ .Description }}</p>
+            {{ end }}
+        </div>
+    </header>
+    
+    <div class="container" style="max-width: var(--container-narrow); padding: var(--space-16) var(--space-6);">
+        <div class="prose" style="font-size: 1.125rem; line-height: 1.8; color: var(--text-secondary);">
+            {{ .Content }}
+        </div>
+    </div>
+</article>
+{{ end }}
