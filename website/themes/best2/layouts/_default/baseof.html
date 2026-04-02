@@ -7,7 +7,8 @@
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="/css/modern-2026.css?v=1">
+    {{ $css := resources.Get "css/modern-2026.css" | resources.Minify }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 </head>
 <body>
     <header class="header">
