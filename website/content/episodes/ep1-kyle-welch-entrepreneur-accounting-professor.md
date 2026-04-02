@@ -7,7 +7,6 @@ duration: "52 minutes"
 youtube_id: "eTgUTG6cWn0"
 date: 2024-03-22T00:00:00Z
 ---
-
 Kyle Welch - Entrepreneur & Accounting Professor shares insights from their mission in Detroit, MI and how those experiences shaped their career and life.
 
 ## About Kyle Welch - Entrepreneur & Accounting Professor
@@ -24,12 +23,3 @@ Kyle Welch - Entrepreneur & Accounting Professor is featured in this episode of 
 ## Watch the Episode
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/eTgUTG6cWn0" title="Kyle Welch - Entrepreneur & Accounting Professor - The Best 2 Podcast" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## Full Transcript
-
-*[Transcript will be added here once transcribed]*
-
-To get this episode transcribed:
-1. Download audio from YouTube
-2. Use Whisper API or similar service
-3. Paste transcript here for SEO benefits

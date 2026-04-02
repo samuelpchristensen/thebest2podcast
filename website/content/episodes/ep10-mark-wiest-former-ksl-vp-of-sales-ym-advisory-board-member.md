@@ -7,7 +7,6 @@ duration: "43 minutes"
 youtube_id: "Rn5T51Vkmrk"
 date: 2025-03-22T00:00:00Z
 ---
-
 Mark Wiest - Former KSL VP of Sales & YM Advisory Board Member shares insights from their mission in Rosario, AR & Veracruz, MX and how those experiences shaped their career and life.
 
 ## About Mark Wiest - Former KSL VP of Sales & YM Advisory Board Member
@@ -24,12 +23,3 @@ Mark Wiest - Former KSL VP of Sales & YM Advisory Board Member is featured in th
 ## Watch the Episode
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/Rn5T51Vkmrk" title="Mark Wiest - Former KSL VP of Sales & YM Advisory Board Member - The Best 2 Podcast" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## Full Transcript
-
-*[Transcript will be added here once transcribed]*
-
-To get this episode transcribed:
-1. Download audio from YouTube
-2. Use Whisper API or similar service
-3. Paste transcript here for SEO benefits

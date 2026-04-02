@@ -7,7 +7,6 @@ duration: "45 minutes"
 youtube_id: "pL1nUyWRkkI"
 date: 2025-03-22T00:00:00Z
 ---
-
 Tim Clark - PhD Social Scientist & Leadership Expert shares insights from their mission in Seoul, South Korea and how those experiences shaped their career and life.
 
 ## About Tim Clark - PhD Social Scientist & Leadership Expert
@@ -24,12 +23,3 @@ Tim Clark - PhD Social Scientist & Leadership Expert is featured in this episode
 ## Watch the Episode
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/pL1nUyWRkkI" title="Tim Clark - PhD Social Scientist & Leadership Expert - The Best 2 Podcast" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## Full Transcript
-
-*[Transcript will be added here once transcribed]*
-
-To get this episode transcribed:
-1. Download audio from YouTube
-2. Use Whisper API or similar service
-3. Paste transcript here for SEO benefits

@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+    
+    <!-- Primary Meta Tags -->
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="keywords" content="podcast, LDS mission, Mormon, returned missionary, career, BYU, missionary service, leadership">
+    <meta name="author" content="Samuel Christensen">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#E53935">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ .Permalink }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="{{ if eq .Type "episodes" }}article{{ else }}website{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}">
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:image" content="{{ if .Params.youtube_id }}https://img.youtube.com/vi/{{ .Params.youtube_id }}/maxresdefault.jpg{{ else }}https://thebest2podcast.com/images/og-image.jpg{{ end }}">
+    <meta property="og:site_name" content="The Best 2 Podcast">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ .Permalink }}">
+    <meta property="twitter:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}">
+    <meta property="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="twitter:image" content="{{ if .Params.youtube_id }}https://img.youtube.com/vi/{{ .Params.youtube_id }}/maxresdefault.jpg{{ else }}https://thebest2podcast.com/images/og-image.jpg{{ end }}">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="The Best 2 Podcast RSS Feed" href="/index.xml">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- CSS -->
     {{ $css := resources.Get "css/modern-2026.css" | resources.Minify }}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 </head>
@@ -29,7 +60,7 @@
                     <li><a href="/">Home</a></li>
                     <li><a href="/episodes/">Episodes</a></li>
                     <li><a href="/about/">About</a></li>
-                    <li><a href="https://www.youtube.com/@TheBest2Podcast" target="_blank" class="nav-cta">Subscribe</a></li>
+                    <li><a href="/subscribe/">Subscribe</a></li>
                 </ul>
             </nav>
         </div>
